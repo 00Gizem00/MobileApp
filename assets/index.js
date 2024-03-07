@@ -2,7 +2,6 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebas
 import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
 
-// JSON dosyasını oku C:\Users\Shiyu\OneDrive\Desktop\MobileApp\firebase.json
 const configData = await fetch("firebase.json").then(response => response.text());
 const appSettings = JSON.parse(configData);
 
